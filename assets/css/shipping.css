@@ -1,0 +1,209 @@
+main#shipping {
+    padding: 7rem 0 0;
+}
+
+main#shipping h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 6rem;
+}
+
+main#shipping .step-progress {
+    margin-bottom: 10rem;
+}
+
+section.shipping-info {
+    padding: 3rem 0 4rem;
+}
+
+section.shipping-info>a[href="#addShipping"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    width: 14rem;
+    height: 4.5rem;
+    border: 1px solid var(--clr-mid-pink);
+    border-radius: 0.4rem;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+section.shipping-info>a[href="#addShipping"] svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+section.shipping-info>a[href="#addShipping"]:hover svg path {
+    stroke: var(--clr-mid-pink);
+}
+
+section.shipping-info table,
+section.shipping-info tr,
+section.shipping-info td,
+section.shipping-info table th {
+    border: 1px solid var(--clr-step);
+    letter-spacing: 0.1em;
+}
+
+section.shipping-info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+section.shipping-info table th,
+section.shipping-info table td {
+    padding: 2.5rem 2rem;
+    vertical-align: top;
+}
+
+section.shipping-info table th {
+    text-align: center;
+    font-weight: 900;
+}
+
+section.shipping-info table button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    width: 14rem;
+    height: 4.5rem;
+
+    border-radius: 0.4rem;
+
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+section.shipping-info table button svg {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+section.shipping-info table button.btn-edit {
+    border: 1px solid var(--clr-mid-pink);
+}
+section.shipping-info table .accordion-body ul {
+    list-style: disc;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+
+
+section.shipping-info table .accordion-body:has(table.shipping-option-tbl) {
+    padding: 2rem 2rem;
+}
+
+table.shipping-option-tbl {
+    border: none;
+}
+
+table.shipping-option-tbl .box-select {
+    width: 18rem;
+    height: 4.2rem;
+}
+
+table.shipping-option-tbl .input-number {
+    width: 5rem;
+    padding: 0 0;
+}
+
+table.shipping-option-tbl td:has(.input-number) {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+    section.shipping-info table button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 0.4rem;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    section.shipping-info table .accordion-body:has(table.shipping-option-tbl) {
+        padding: 0.2rem 0.2rem;
+    }
+
+    table.shipping-option-tbl tr td:first-child {
+        width: 20%;
+    }
+
+    table.shipping-option-tbl td {
+        padding: 0.3rem 0.3rem !important;
+    }
+
+    table.shipping-option-tbl .box-select {
+        width: 10.7rem;
+        height: 4.2rem;
+    }
+
+    table.shipping-option-tbl .input-number {
+        width: 3rem;
+        padding: 0 0;
+    }
+
+    table.shipping-option-tbl .box-select select {
+
+        padding: 0.4rem 0rem;
+    }
+
+    section.shipping-info table {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    main#shipping h4 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        margin-bottom: 12rem;
+    }
+
+    main#cart {
+        padding: 3rem 0;
+    }
+
+    main#cart h4 {
+        font-size: 1.8rem;
+        margin-bottom: 12rem;
+    }
+
+    table#shippingTbl {
+        width: 110rem;
+    }
+
+    section.shipping-info {
+        padding: 3rem 0 4rem;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    main#shipping .modal .form-group {
+        align-items: flex-start;
+        column-gap: 1rem;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+    }
+    main#shipping .modal .form-group label + *{
+        margin-left: 2rem;
+    }
+}

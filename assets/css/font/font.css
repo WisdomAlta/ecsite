@@ -1,0 +1,26 @@
+
+@font-face {
+  font-family: 'Noto Regular';
+  src: url('NotoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Imperial Script';
+  src: url('FontsFree-Net-ImperialScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KaushanScript';
+  src: url('KaushanScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aclonica';
+  src: url('Aclonica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,229 @@
+main#confirm {
+    padding: 3rem 0;
+}
+
+main#confirm h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 6rem;
+}
+
+main#confirm h5 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    padding-left: 7rem;
+    margin-bottom: 4.5rem;
+}
+
+main#confirm .step-progress {
+    margin-bottom: 5rem;
+}
+
+.point-section {
+    padding: 5.8rem 0 3.8rem;
+}
+
+main#confirm .accordion-header {
+    padding: 1.8rem 4rem;
+    background: var(--clr-grayer);
+    border-radius: 1rem;
+}
+
+main#confirm .accordion-header.active {
+    background: var(--clr-lgt-pink);
+}
+
+main#confirm .accordion-lists .accordion:not(:last-child) {
+    margin-bottom: 1px;
+}
+
+main#confirm .accordion-header span.icon {
+    right: 5rem;
+}
+
+main#confirm .accordion-header .prd-quatity {
+    margin-left: 40rem;
+}
+
+main#confirm .accordion-header .sum-costs {
+    margin-left: 8rem;
+}
+
+main#confirm .accordion-body {
+    padding: 5rem 16rem 5rem 8rem;
+}
+
+main#confirm .accordion-body .order__costs--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main#confirm .accordion-body .order__costs--item * {
+    letter-spacing: 0.1em;
+}
+
+main#confirm .accordion-lists {
+    margin-bottom: 6rem;
+}
+
+main#confirm .order__total--lists {
+    margin-bottom: 4rem;
+}
+
+main#confirm .order__total--lists .order__total--item {
+    position: relative;
+    padding: 1.8rem 4rem;
+    border-radius: 0.8rem;
+}
+
+main#confirm .order__total--lists .order__total--item:not(:last-child) {
+    margin-bottom: 1px;
+}
+
+main#confirm .order__total--lists .order__total--item>span:last-child {
+    position: absolute;
+    right: 16rem;
+    top: 50%;
+    translate: 0 -50%;
+    width: fit-content;
+}
+
+main#confirm .order-etc__lists {
+    margin-bottom: 3rem;
+    border: 1px solid var(--clr-grayer);
+}
+
+main#confirm .order-etc__lists .order-etc__item {
+    display: grid;
+    grid-template-columns: 32rem minmax(0rem, 1fr);
+}
+
+main#confirm .order-etc__lists .order-etc__item * {
+    letter-spacing: 0.1em;
+}
+
+main#confirm .order-etc__lists .order-etc__item>div {
+    padding: 4rem 3rem;
+}
+
+main#confirm .order-etc__lists .order-etc__item:not(:last-child) div.quiz {
+    border-bottom: 1px solid #ffffff;
+}
+
+main#confirm .order-etc__lists .order-etc__item:not(:last-child) div.answer {
+    border-bottom: 1px solid var(--clr-grayer);
+}
+
+main#confirm .order-etc__lists .order-etc__item div.quiz {
+    background-color: var(--clr-grayer);
+}
+
+main#confirm .order-content {
+    padding: 5rem 0;
+}
+
+main#confirm .order-etc {
+    padding: 5rem 0;
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+    main#confirm .accordion-header .prd-quatity {
+        margin-left: 14rem;
+    }
+
+    main#confirm .accordion-header .sum-costs {
+        margin-left: 4rem;
+    }
+
+    main#confirm .accordion-body .order__costs--item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main#confirm .accordion-body .order__costs--item:not(:last-child) {
+        margin-bottom: 0.8rem;
+    }
+
+    main#confirm .accordion-body {
+        padding: 3rem 11rem 3rem 4rem;
+    }
+
+    main#confirm .order__total--lists .order__total--item>span:last-child {
+        position: absolute;
+        right: 11.6rem;
+        top: 50%;
+        translate: 0 -50%;
+        width: fit-content;
+    }
+
+    main#confirm .order-etc {
+        padding: 0rem 0 5rem;
+    }
+
+    main#confirm .order-etc__lists .order-etc__item>div {
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    main#confirm h4 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        margin-bottom: 12rem;
+    }
+
+    main#confirm h5 {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        padding-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    main#confirm .accordion-header .prd-quatity {
+        margin-left: 0;
+    }
+    main#confirm .accordion-header {
+        padding: 1.8rem 4rem;
+        background: var(--clr-grayer);
+        border-radius: 1rem;
+        line-height: 2;
+    }
+    main#confirm .accordion-body {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    main#confirm .order__total--lists .order__total--item>span:last-child {
+        position: absolute;
+        right: 4rem;
+        top: 50%;
+        translate: 0 -50%;
+        width: fit-content;
+    }
+    main#confirm .order-etc {
+        padding: 0rem 0 3rem;
+    }
+    main#confirm .order-etc__lists .order-etc__item {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    main#confirm .order-etc__lists .order-etc__item:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    main#confirm .order-etc__lists .order-etc__item>div {
+        padding: 2rem 2rem;
+    }
+    main#confirm .order-etc__lists .order-etc__item:not(:last-child) div.quiz {
+        border-bottom: 1px solid var(--clr-mid-pink);
+    }
+    main#confirm .order-etc__lists .order-etc__item div.quiz {
+        background-color: transparent;
+    }
+    main#confirm .order-etc__lists {
+        margin-bottom: 3rem;
+        border: none;
+    }
+}

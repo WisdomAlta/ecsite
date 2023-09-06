@@ -1,0 +1,205 @@
+main#credit {
+    padding: 3rem 0;
+}
+main#credit * {
+    letter-spacing: 0.1em;
+}
+main#credit h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 6rem;
+}
+
+main#credit .step-progress {
+    margin-bottom: 5rem;
+}
+
+main#credit .credit-content {
+    padding: 5.8rem 0 3.8rem;
+}
+
+main#credit h5 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    padding-left: 7rem;
+    margin-bottom: 4.5rem;
+}
+main#credit .billed-amount {
+    padding: 4rem 0;
+    border-top: 1px solid var(--clr-lgt-pink);
+    border-bottom: 1px solid var(--clr-lgt-pink);
+}
+main#credit .billed-amount p{
+    padding-right: 22rem;
+}
+main#credit .shopping-banner {
+    margin-bottom: 5.4rem;
+}
+
+main#credit .credit-wrapper {
+    padding: 0 15rem;
+}
+main#credit .card__number--group {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+main#credit .form-group input[type = "text"] {
+    display: inline-block;
+    width: 10rem;
+    padding: 0.4rem 1rem !important;
+}
+main#credit .card__number--caution {
+    margin-left: auto;
+    margin-right: 3rem;
+    margin-top: 2.2rem;
+    margin-bottom: 4.4rem;
+    width: fit-content;
+
+}
+
+.datepicker-wrapper  a:hover,
+.datepicker-wrapper  button:hover {
+  text-decoration: none;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+}
+.calendar,
+.datepicker {
+  max-width: 300px;
+  margin: auto;
+}
+.calendar {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 1em;
+}
+.datepicker input {
+  margin: 0;
+  font-family: inherit;
+  display: block;
+  width: 85%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem 0.375rem 2.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.datepicker input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #f28388;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(219, 61, 68, 0.25);
+}
+.datepicker i {
+  position: absolute;
+}
+.datepicker-wrapper .icon {
+  padding: 16px;
+  font-size: larger;
+  color: #555555;
+}
+.datepicker-wrapper .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.datepicker-wrapper .title .arrow-control {
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+}
+.datepicker-wrapper .title .arrow-control:hover {
+  background-color: #db3d44;
+  color: white;
+  cursor: pointer;
+}
+.datepicker-wrapper .title .year-month:hover,
+.datepicker-wrapper .title .year:hover {
+  color: #cccccc;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.datepicker-wrapper .week .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  font-weight: bold;
+}
+.datepicker-wrapper .list,
+.datepicker-wrapper .week {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.datepicker-wrapper .list .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  height: 42px;
+  margin-top: 1em;
+  /* padding: 7.14%; */
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.datepicker-wrapper .list .date:hover,
+.datepicker-wrapper .list .date:focus,
+.datepicker-wrapper .list .mon:hover,
+.datepicker-wrapper .list .mon:focus {
+  background-color: #db3d44;
+  color: white;
+  cursor: pointer;
+}
+.datepicker-wrapper .active {
+  background-color: #db3d44 !important;
+  color: white;
+}
+.datepicker-wrapper .list .fadeout {
+  color: #eeeeee;
+}
+.datepicker-wrapper .list .today {
+  color: #db3d44;
+}
+.datepicker-wrapper .list .today.active {
+  color: white;
+}
+.datepicker-wrapper .list .mon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 50px;
+  margin-top: 1em;
+  /* padding: 7.14%; */
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.datepicker-wrapper #yearlist .mon:first-child,
+.datepicker-wrapper #yearlist .mon:last-child {
+  color: #9d9d9d;
+}
+.datepicker-wrapper .d-none {
+  display: none;
+}
+
+
+
+
+

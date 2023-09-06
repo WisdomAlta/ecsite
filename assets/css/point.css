@@ -1,0 +1,34 @@
+main#point{
+    padding: 3rem 0;
+}
+main#point h4 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 6rem;
+}
+
+
+
+main#point .step-progress {
+    margin-bottom: 5rem;
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px){
+
+}
+@media screen and (min-width: 429px) and (max-width: 768px){
+
+}
+@media screen and (max-width: 428px){
+    main#point h4 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        margin-bottom: 12rem;
+    }
+    
+    
+}

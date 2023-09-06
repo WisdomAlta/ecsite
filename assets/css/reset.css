@@ -1,0 +1,282 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: clamp(6px, calc(1000vw * (1 / 1440)), 10px);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        /* font-size: 10px; */
+        font-size: clamp(6px, calc(1000vw * (1 / 425)), 10px);
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+    html{
+        font-size: calc(1000vw / 768);
+    }
+}
+
+body {
+    font-family: 'Noto Regular';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--clr-main-black);
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+    outline: 0 !important;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+h3,
+h4 {
+    line-height: 1.5;
+}
+
+h5,
+h6 {
+    line-height: inherit;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:not([href]):not([class]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+.clearfix::after {
+    content: "";
+    visibility: hidden;
+    height: 0;
+    display: block;
+    font-size: 0;
+    clear: both;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}

@@ -1,0 +1,54 @@
+main#sender h4{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    margin-bottom: 6rem;
+}
+main#sender .step-progress{
+    margin-bottom: 5rem;
+}
+
+main#sender .sender-choice{
+    padding: 5.8rem 0 3.8rem;
+}
+main#sender .sender-choice h5{
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    padding-left: 7rem;
+    margin-bottom: 4.5rem;
+}
+main#sender .radio-accordion-body .sender__info--lists{
+    list-style: disc;
+    font-size: 1.8rem;
+}
+main#sender .radio-accordion-body .sender__info--item:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (min-width: 429px) and(max-width: 768px){
+    
+}
+@media screen and (max-width: 428px){
+    main#sender h4{
+        font-size: 1.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        margin-bottom: 12rem;
+    }
+    main#sender{
+        padding-top: 5rem;
+    }
+    main#sender .radio-accordion-item:nth-child(3) .radio-accordion-body {
+        padding: 2rem 2rem;
+    }
+    main#sender .sender-choice h5 {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+        padding-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="og:title" property="og:title" content="">
+    <meta name="twitter:card" content="">
+    <title>アクリル職人</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <!-- css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/vov.css">
+    <link rel="stylesheet" href="./assets/css/font/font.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <link rel="stylesheet" href="./assets/css/hover.css">
+
+
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/keyframe.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/prd-lsts.css">
+    <link rel="stylesheet" href="./assets/css/prd-single.css">
+    <link rel="stylesheet" href="./assets/css/attachment.css">
+
+    <!-- js link -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+</head>
+
+<body class="relative">
+    <header class="back-clr-white">
+        <div class="h-container">
+            <div class="h-wrapper flex flex-y-center space-between">
+                <a href="javascript:;">
+                    <img src="./assets/img/logo.png" class="logo-image" alt="アクリル職人ロゴ">
+                </a>
+                <div class="search-input-wrapper sp-hide">
+                    <form class="block relative">
+                        <input type="text" placeholder="キーワード検索" class="text-right">
+                        <button type="submit" class="back-clr-none brd-none absolute">
+                            <img src="./assets/img/icon/header/search.png" alt="search image">
+                        </button>
+                    </form>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav__lists flex">
+                        <li class="header-nav__lists-item sp-hide">
+                            <a class="header-nav__lists-item__wrapper active flex flex-x-center" href="javascript:;">
+                                <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.44527 1.26593C2.95309 1.74904 2.88889 1.95034 2.88889 3.27889V4.74834L1.45515 4.80873L0 4.86912V15.6384V26.4077L7.87491 26.4681C15.6214 26.5084 15.7284 26.5084 15.7284 26.1058C15.7284 25.7032 15.6 25.7032 8.23869 25.7032H0.748972V15.6384V5.57365H1.81893H2.88889V6.88207C2.88889 7.88855 2.82469 8.19049 2.5893 8.19049C2.13992 8.19049 1.60494 8.97555 1.60494 9.61969C1.60494 10.3041 2.5679 11.2099 3.29548 11.2099C3.98025 11.2099 4.75062 10.5859 4.94322 9.88138C5.11441 9.23723 4.70782 8.39179 4.17284 8.25088C3.80906 8.15023 3.74486 7.96907 3.74486 6.86194V5.57365H9.73664H15.7284V6.86194C15.7284 7.96907 15.6642 8.15023 15.3004 8.25088C14.7654 8.39179 14.3589 9.23723 14.5301 9.88138C14.7226 10.5859 15.493 11.2099 16.1778 11.2099C16.9054 11.2099 17.8683 10.3041 17.8683 9.61969C17.8683 8.97555 17.3334 8.19049 16.884 8.19049C16.6486 8.19049 16.5844 7.88855 16.5844 6.88207V5.57365H17.6543H18.7243V10.2034C18.7243 14.6923 18.7457 14.8332 19.1523 14.8332C19.5589 14.8332 19.5803 14.6923 19.5803 10.2034V5.57365H21.7202H23.8601V10.606C23.8601 15.5176 23.8601 15.6384 24.2881 15.6384C24.7161 15.6384 24.7161 15.5378 24.6733 10.2437L24.6091 4.86912L23.3893 4.80873L22.1482 4.74834V3.27889C22.1482 1.95034 22.084 1.74904 21.5918 1.26593C21.0568 0.782823 20.8856 0.742563 19.0239 0.742563C17.1622 0.742563 17.0124 0.762693 17.0124 1.14515C17.0124 1.50749 17.1622 1.54775 18.8955 1.54775C20.0724 1.54775 20.8642 1.62826 21.0354 1.7893C21.1852 1.93021 21.2922 2.59448 21.2922 3.39966V4.76847H18.9383H16.5844V3.27889C16.5844 1.95034 16.5202 1.74904 16.028 1.26593L15.4502 0.742563H9.73664H4.02305L3.44527 1.26593ZM15.4716 1.7893C15.6214 1.93021 15.7284 2.59448 15.7284 3.39966V4.76847H9.73664H3.74486V3.39966C3.74486 2.59448 3.85186 1.93021 4.00165 1.7893C4.36544 1.4471 15.1078 1.4471 15.4716 1.7893ZM3.95885 9.09632C4.51523 9.74047 3.68066 10.7268 2.95309 10.284C2.20412 9.84112 2.46091 8.79438 3.31688 8.79438C3.53087 8.79438 3.80906 8.93529 3.95885 9.09632ZM16.7984 9.09632C17.3548 9.74047 16.5202 10.7268 15.7926 10.284C15.0436 9.84112 15.3004 8.79438 16.1564 8.79438C16.3704 8.79438 16.6486 8.93529 16.7984 9.09632Z"
+                                        fill="black" />
+                                    <path
+                                        d="M18.4247 16.4436C16.3918 17.1884 14.8724 19.2618 14.8724 21.2747C14.8724 23.3078 16.4132 25.3812 18.4675 26.1058C19.8798 26.6091 20.9712 26.6091 22.4264 26.1058C24.4379 25.4013 26 23.3078 26 21.2747C26 19.2416 24.4379 17.1482 22.4264 16.4436C20.9926 15.9404 19.7943 15.9404 18.4247 16.4436ZM22.2552 17.2287C25.3366 18.5572 26.0856 22.1604 23.7317 24.3747C21.3778 26.5889 17.5473 25.8844 16.135 22.9857C14.4231 19.5033 18.5531 15.6183 22.2552 17.2287Z"
+                                        fill="black" />
+                                    <path
+                                        d="M17.8683 19.2617C17.8683 19.5234 18.0181 19.6643 18.2963 19.6643C18.5745 19.6643 18.7243 19.5234 18.7243 19.2617C18.7243 19.0001 18.5745 18.8592 18.2963 18.8592C18.0181 18.8592 17.8683 19.0001 17.8683 19.2617Z"
+                                        fill="black" />
+                                    <path
+                                        d="M19.5803 19.2617C19.5803 19.6241 19.7301 19.6643 21.2923 19.6643C22.8544 19.6643 23.0042 19.6241 23.0042 19.2617C23.0042 18.8994 22.8544 18.8592 21.2923 18.8592C19.7301 18.8592 19.5803 18.8994 19.5803 19.2617Z"
+                                        fill="black" />
+                                    <path
+                                        d="M17.8683 21.2747C17.8683 21.5364 18.0181 21.6773 18.2963 21.6773C18.5745 21.6773 18.7243 21.5364 18.7243 21.2747C18.7243 21.013 18.5745 20.8721 18.2963 20.8721C18.0181 20.8721 17.8683 21.013 17.8683 21.2747Z"
+                                        fill="black" />
+                                    <path
+                                        d="M19.5803 21.2747C19.5803 21.637 19.7301 21.6773 21.2923 21.6773C22.8544 21.6773 23.0042 21.637 23.0042 21.2747C23.0042 20.9124 22.8544 20.8721 21.2923 20.8721C19.7301 20.8721 19.5803 20.9124 19.5803 21.2747Z"
+                                        fill="black" />
+                                    <path
+                                        d="M17.8683 23.2876C17.8683 23.5493 18.0181 23.6902 18.2963 23.6902C18.5745 23.6902 18.7243 23.5493 18.7243 23.2876C18.7243 23.026 18.5745 22.885 18.2963 22.885C18.0181 22.885 17.8683 23.026 17.8683 23.2876Z"
+                                        fill="black" />
+                                    <path
+                                        d="M19.5803 23.2876C19.5803 23.65 19.7301 23.6902 21.2923 23.6902C22.8544 23.6902 23.0042 23.65 23.0042 23.2876C23.0042 22.9253 22.8544 22.885 21.2923 22.885C19.7301 22.885 19.5803 22.9253 19.5803 23.2876Z"
+                                        fill="black" />
+                                </svg>
+                                <p class="font-12 fw-700">商品一覧</p>
+                            </a>
+                        </li>
+                        <li class="header-nav__lists-item sp-hide">
+                            <a class="header-nav__lists-item__wrapper flex flex-x-center" href="javascript:;">
+
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.12571 16.7717C5.59304 17.6843 1.57448 19.5478 4.02205 21.8796C5.21767 23.0187 6.54928 23.8333 8.22344 23.8333H17.7766C19.4507 23.8333 20.7823 23.0187 21.978 21.8796C24.4255 19.5478 20.407 17.6843 18.8743 16.7717C15.2802 14.6317 10.7198 14.6317 7.12571 16.7717Z"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.875 7.04167C17.875 9.73406 15.6924 11.9167 13 11.9167C10.3076 11.9167 8.125 9.73406 8.125 7.04167C8.125 4.34928 10.3076 2.16667 13 2.16667C15.6924 2.16667 17.875 4.34928 17.875 7.04167Z"
+                                        stroke="black" stroke-width="1.5" />
+                                </svg>
+
+                                <p class="font-12 fw-700">会員登録</p>
+                            </a>
+                        </li>
+                        <li class="header-nav__lists-item">
+                            <a class="header-nav__lists-item__wrapper flex flex-x-center" href="javascript:;">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.8119 4.48474C25.699 4.24323 25.5377 4.04775 25.3461 3.9199C25.1544 3.79205 24.9398 3.73681 24.7259 3.76028H7.41952L6.55072 1.35692C6.49123 1.17912 6.41847 1.00962 6.33353 0.850951C6.26484 0.732164 6.18614 0.624138 6.09895 0.52897L5.90782 0.310482C5.83332 0.247859 5.75483 0.19399 5.67324 0.149492H5.61242L5.36916 0.068996L5.21278 0H1.65071C1.21292 1.72694e-08 0.793051 0.230191 0.483483 0.639935C0.173914 1.04968 0 1.60541 0 2.18487C0 2.76434 0.173914 3.32007 0.483483 3.72981C0.793051 4.13956 1.21292 4.36975 1.65071 4.36975H3.98778L4.93476 7.07209C5.07945 7.65012 5.26564 8.20847 5.49079 8.7395L7.81917 15.6391L7.89736 15.8116L8.33176 17.0305C8.41248 17.3822 8.55794 17.7019 8.75507 17.9608C8.95221 18.2198 9.19484 18.4098 9.46119 18.5139V18.6059H21.3116V18.5139C21.5766 18.41 21.8182 18.2213 22.0152 17.9647C22.2121 17.708 22.3584 17.3911 22.441 17.042L25.2733 8.7395C25.4557 8.25652 26.394 5.76117 25.8119 4.48474ZM24.4219 8.19903L21.7199 16.0991H21.6504L21.5288 16.697C21.4845 16.9033 21.3895 17.0842 21.259 17.2112C21.1284 17.3382 20.9696 17.4041 20.8077 17.3985H20.2603H9.92165C9.76262 17.3977 9.60823 17.3274 9.48253 17.1985C9.35683 17.0695 9.26685 16.8892 9.22662 16.6855L9.02679 16.1221L6.32484 8.15303C6.12125 7.66755 5.94975 7.15969 5.81225 6.63512L4.58724 3.11632H1.65071C1.46177 3.11632 1.28056 3.01697 1.14696 2.84014C1.01336 2.6633 0.9383 2.42346 0.9383 2.17337C0.9383 1.92329 1.01336 1.68345 1.14696 1.50661C1.28056 1.32977 1.46177 1.23043 1.65071 1.23043H5.1259C5.16907 1.22139 5.21305 1.22139 5.25622 1.23043C5.30063 1.24547 5.34211 1.27292 5.37785 1.31092L5.49079 1.41442L5.58636 1.55241C5.62186 1.62632 5.65378 1.70314 5.68193 1.7824L6.82005 5.00221H24.7259C24.9518 5.00221 24.9953 5.09421 25.004 5.1287C25.1951 5.57718 24.8736 7.06059 24.4219 8.19903ZM11.7288 19.8824C11.2717 19.8824 10.8249 20.0617 10.4448 20.3979C10.0648 20.734 9.76858 21.2117 9.59367 21.7706C9.41875 22.3295 9.37299 22.9446 9.46216 23.5379C9.55133 24.1313 9.77143 24.6763 10.0946 25.1041C10.4178 25.5319 10.8296 25.8232 11.2779 25.9412C11.7262 26.0592 12.1909 25.9987 12.6131 25.7672C13.0354 25.5356 13.3963 25.1436 13.6503 24.6406C13.9042 24.1375 14.0397 23.5462 14.0397 22.9412C14.0375 22.1309 13.7932 21.3546 13.3603 20.7816C12.9274 20.2086 12.341 19.8854 11.7288 19.8824ZM11.7288 24.8961C11.4366 24.8961 11.1511 24.7814 10.9082 24.5666C10.6653 24.3518 10.476 24.0465 10.3642 23.6893C10.2524 23.3321 10.2232 22.939 10.2802 22.5598C10.3372 22.1806 10.4778 21.8323 10.6844 21.5589C10.8909 21.2855 11.1541 21.0993 11.4406 21.0239C11.7271 20.9484 12.0241 20.9871 12.294 21.1351C12.5638 21.2831 12.7945 21.5336 12.9568 21.8551C13.1191 22.1766 13.2057 22.5545 13.2057 22.9412C13.2057 23.4596 13.0501 23.9569 12.7731 24.3235C12.4961 24.6901 12.1205 24.8961 11.7288 24.8961ZM19.7391 19.8824C19.282 19.8824 18.8352 20.0617 18.4551 20.3979C18.0751 20.734 17.7789 21.2117 17.604 21.7706C17.4291 22.3295 17.3833 22.9446 17.4725 23.5379C17.5616 24.1313 17.7817 24.6763 18.1049 25.1041C18.4281 25.5319 18.8399 25.8232 19.2882 25.9412C19.7365 26.0592 20.2012 25.9987 20.6234 25.7672C21.0457 25.5356 21.4066 25.1436 21.6606 24.6406C21.9145 24.1375 22.0501 23.5462 22.0501 22.9412C22.0501 22.1299 21.8066 21.3519 21.3732 20.7783C20.9398 20.2046 20.352 19.8824 19.7391 19.8824ZM19.7391 24.8961C19.4469 24.8961 19.1614 24.7814 18.9185 24.5666C18.6756 24.3518 18.4863 24.0465 18.3745 23.6893C18.2627 23.3321 18.2335 22.939 18.2905 22.5598C18.3475 22.1806 18.4881 21.8323 18.6947 21.5589C18.9012 21.2855 19.1644 21.0993 19.4509 21.0239C19.7374 20.9484 20.0344 20.9871 20.3043 21.1351C20.5741 21.2831 20.8048 21.5336 20.9671 21.8551C21.1294 22.1766 21.216 22.5545 21.216 22.9412C21.216 23.4596 21.0604 23.9569 20.7834 24.3235C20.5064 24.6901 20.1308 24.8961 19.7391 24.8961Z"
+                                        fill="black" />
+                                </svg>
+
+                                <p class="font-12 fw-700">カート</p>
+                            </a>
+                        </li>
+                        <li class="header-nav__lists-item sp-hide">
+                            <a class="header-nav__lists-item__wrapper flex flex-x-center" href="javascript:;">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.65 2.3H13.35C7.52816 2.3 4.61723 2.3 2.80862 4.10862C1 5.91723 1 8.82816 1 14.65C1 20.4718 1 23.3828 2.80862 25.1914C4.61723 27 7.52816 27 13.35 27C19.1719 27 22.0828 27 23.8914 25.1914C25.7 23.3828 25.7 20.4718 25.7 14.65V13.35"
+                                        stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+                                    <path
+                                        d="M27 5.55C27 8.0629 24.9629 10.1 22.45 10.1C19.9371 10.1 17.9 8.0629 17.9 5.55C17.9 3.0371 19.9371 1 22.45 1C24.9629 1 27 3.0371 27 5.55Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path d="M7.5 12.7H12.7" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7.5 19.2H17.9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                                <p class="font-12 fw-700">おしらせ</p>
+                            </a>
+                        </li>
+                        <li class="header-nav__lists-item sp-hide">
+                            <a class="header-nav__lists-item__wrapper flex flex-x-center" href="javascript:;">
+
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.882" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.85159 3.86718C10.509 3.82816 13.1652 3.86721 15.8203 3.98437C16.9628 3.98843 17.7831 4.49625 18.2813 5.50781C18.576 6.97706 18.6931 8.46142 18.6328 9.96093C19.961 9.92259 20.0391 9.84447 18.8672 9.72656C18.8672 9.02343 18.8672 8.32031 18.8672 7.61718C21.5852 8.1404 24.2414 8.8826 26.836 9.84375C27.8131 10.626 28.2818 11.6416 28.2422 12.8906C27.7083 15.6906 27.0443 18.4641 26.25 21.2109C25.5605 23.4659 24.076 24.3253 21.7969 23.7891C21.1389 24.8808 20.1624 25.4667 18.8672 25.5469C14.2578 25.7032 9.64847 25.7032 5.03909 25.5469C2.78147 25.2424 1.57053 23.9534 1.40627 21.6797C1.19455 18.5435 1.27268 15.4185 1.64065 12.3047C2.30018 10.6664 3.51112 9.88521 5.27346 9.96093C5.18501 8.37728 5.30219 6.81478 5.62502 5.27343C6.22289 4.52791 6.96509 4.05916 7.85159 3.86718ZM8.08596 9.02343C9.3158 9.0562 9.55017 9.564 8.78909 10.5469C7.58962 10.5057 7.35525 9.99787 8.08596 9.02343ZM11.3672 9.02343C12.66 9.0172 12.9725 9.525 12.3047 10.5469C11.2012 10.5661 10.8887 10.0583 11.3672 9.02343ZM14.8828 9.02343C15.994 8.94407 16.3065 9.41282 15.8203 10.4297C15.061 10.8259 14.5922 10.5916 14.4141 9.72656C14.5764 9.48801 14.7326 9.25364 14.8828 9.02343ZM4.10159 10.6641C4.49222 10.6641 4.88283 10.6641 5.27346 10.6641C5.31225 11.6048 5.27318 12.5423 5.15627 13.4766C4.84856 13.2251 4.497 13.0689 4.10159 13.0078C3.76603 13.0625 3.64884 13.2187 3.75002 13.4766C5.37384 14.4645 7.05354 15.3629 8.78909 16.1719C7.02401 17.0927 5.30524 18.0693 3.63284 19.1016C3.91948 19.3626 4.23197 19.4017 4.57034 19.2187C6.09173 18.4972 7.5761 17.716 9.02346 16.875C10.0068 16.8559 10.9833 16.9731 11.9531 17.2266C12.7067 17.1261 13.4489 16.9698 14.1797 16.7578C15.8845 17.4539 17.5251 18.2743 19.1016 19.2187C19.4047 19.3336 19.7172 19.3727 20.0391 19.3359C20.0904 19.0605 20.0123 18.8262 19.8047 18.6328C18.2052 17.8722 16.6427 17.0519 15.1172 16.1719C16.7089 15.3988 18.2715 14.5785 19.8047 13.7109C20.0123 13.5176 20.0904 13.2832 20.0391 13.0078C19.551 13.0012 19.1213 13.1575 18.75 13.4766C18.6331 12.5423 18.594 11.6048 18.6328 10.6641C20.0837 10.7061 21.0602 11.4092 21.5625 12.7734C21.7188 16.0547 21.7188 19.3359 21.5625 22.6172C21.0844 23.8772 20.186 24.6194 18.8672 24.8437C14.2578 25.0001 9.64847 25.0001 5.03909 24.8437C3.25144 24.5405 2.27486 23.4858 2.1094 21.6797C1.95315 19.0234 1.95315 16.3672 2.1094 13.7109C2.26124 12.3503 2.9253 11.3347 4.10159 10.6641Z"
+                                        fill="black" class="hover-fill-pink" />
+                                </svg>
+
+                                <p class="font-12 fw-700">お問い合わせ</p>
+                            </a>
+                        </li>
+                        <li class="header-nav__lists-item" id="menuBar">
+                            <a class="header-nav__lists-item__wrapper flex flex-x-center" href="javascript:;">
+                                <svg class="open block" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.75 19.125C20.75 18.2275 20.0225 17.5 19.125 17.5C18.2275 17.5 17.5 18.2275 17.5 19.125C17.5 20.0225 18.2275 20.75 19.125 20.75C20.0225 20.75 20.75 20.0225 20.75 19.125Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M12.625 19.125C12.625 18.2275 11.8975 17.5 11 17.5C10.1025 17.5 9.375 18.2275 9.375 19.125C9.375 20.0225 10.1025 20.75 11 20.75C11.8975 20.75 12.625 20.0225 12.625 19.125Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M4.5 19.125C4.5 18.2275 3.77246 17.5 2.875 17.5C1.97754 17.5 1.25 18.2275 1.25 19.125C1.25 20.0225 1.97754 20.75 2.875 20.75C3.77246 20.75 4.5 20.0225 4.5 19.125Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M20.75 11C20.75 10.1025 20.0225 9.375 19.125 9.375C18.2275 9.375 17.5 10.1025 17.5 11C17.5 11.8975 18.2275 12.625 19.125 12.625C20.0225 12.625 20.75 11.8975 20.75 11Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M20.75 2.875C20.75 1.97754 20.0225 1.25 19.125 1.25C18.2275 1.25 17.5 1.97754 17.5 2.875C17.5 3.77246 18.2275 4.5 19.125 4.5C20.0225 4.5 20.75 3.77246 20.75 2.875Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M12.625 11C12.625 10.1025 11.8975 9.375 11 9.375C10.1025 9.375 9.375 10.1025 9.375 11C9.375 11.8975 10.1025 12.625 11 12.625C11.8975 12.625 12.625 11.8975 12.625 11Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M12.625 2.875C12.625 1.97754 11.8975 1.25 11 1.25C10.1025 1.25 9.375 1.97754 9.375 2.875C9.375 3.77246 10.1025 4.5 11 4.5C11.8975 4.5 12.625 3.77246 12.625 2.875Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M4.5 11C4.5 10.1025 3.77246 9.375 2.875 9.375C1.97754 9.375 1.25 10.1025 1.25 11C1.25 11.8975 1.97754 12.625 2.875 12.625C3.77246 12.625 4.5 11.8975 4.5 11Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                    <path
+                                        d="M4.5 2.875C4.5 1.97754 3.77246 1.25 2.875 1.25C1.97754 1.25 1.25 1.97754 1.25 2.875C1.25 3.77246 1.97754 4.5 2.875 4.5C3.77246 4.5 4.5 3.77246 4.5 2.875Z"
+                                        stroke="#141B34" stroke-width="1.5" />
+                                </svg>
+                                <svg class="close no-display" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5838 5.41654L5.41714 20.5832M5.41714 5.41654L20.5838 20.5832"
+                                        stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p class="font-12 fw-700">MENU</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <div class="menu-component back-clr-grey w-full absolute">
+        <div class="menu-container">
+            <div class="normal-menu__lists">
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/about_acril.png" alt="アクリル職人について">
+                        <p class="clr-pink fw-900">アクリル職人について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/about_special.png" alt="超特急制作について">
+                        <p class="clr-pink fw-900">超特急制作について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/about_client.png" alt="法人のお客様について">
+                        <p class="clr-pink fw-900">法人のお客様について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/order_flow.png" alt="ご注文の流れ">
+                        <p class="clr-pink fw-900">ご注文の流れ</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/submit_flow.png" alt="ご入稿の流れ">
+                        <p class="clr-pink fw-900">ご入稿の流れ</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/deadline.png" alt="納期について">
+                        <p class="clr-pink fw-900">納期について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/shipping.png" alt="配送について">
+                        <p class="clr-pink fw-900">配送について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/about_payment.png" alt="お支払いについて" id="aboutPayment">
+                        <p class="clr-pink fw-900">お支払いについて</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/copyright.png" alt="著作権について">
+                        <p class="clr-pink fw-900">著作権について</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/product_list.png" alt="商品一覧">
+                        <p class="clr-pink fw-900">商品一覧</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/data_prd_guide.png" alt="データ制作ガイド">
+                        <p class="clr-pink fw-900">データ制作ガイド</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/input_simulator.png" alt="入稿シミュレーター">
+                        <p class="clr-pink fw-900">入稿シミュレーター</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/inputing_service.png" alt="入稿データ制作アシストサービス">
+                        <p class="clr-pink fw-900">入稿データ制作アシストサービス</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/free_deliver.png" alt="無料サンプル請求">
+                        <p class="clr-pink fw-900">無料サンプル請求</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/test_print.png" alt="お試し印刷">
+                        <p class="clr-pink fw-900">お試し印刷</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/inquiry.png" alt="お問い合わせ">
+                        <p class="clr-pink fw-900">お問い合わせ</p>
+                    </a>
+
+                </div>
+                <div class="normal-menu__lists-item back-clr-white larger">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/about_qa.png" alt="品質保証について">
+                        <p class="clr-pink fw-900">品質保証について</p>
+                    </a>
+                </div>
+                <div class="normal-menu__lists-item back-clr-white larger">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/operator_outline.png" alt="運営者概要">
+                        <p class="clr-pink fw-900">運営者概要</p>
+                    </a>
+                </div>
+                <div class="normal-menu__lists-item back-clr-white larger">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/operator_outline.png" alt="運営者概要">
+                        <p class="clr-pink fw-900">運営者概要</p>
+                    </a>
+                </div>
+                <div class="normal-menu__lists-item back-clr-white larger">
+                    <a href="javascript:;">
+                        <img src="./assets/img/icon/menu/special_comercial.png" alt="特定商取引に関する表示">
+                        <p class="clr-pink fw-900">特定商取引に関する表示</p>
+                    </a>
+                </div>
+            </div>
+            <div class="sp-menu__lists">
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">アクリル職人について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">超特急制作について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">法人のお客様について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">ご注文の流れ</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">ご入稿の流れ</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">納期について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">配送について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">お支払いについて</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">著作権について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">商品一覧</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">データ制作ガイド</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">入稿シミュレーター</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">入稿データ制作アシストサービス</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">無料サンプル請求</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">お試し印刷</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">お問い合わせ</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">品質保証について</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">運営者概要</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">運営者概要</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+                <div class="sp-menu__lists-item back-clr-white">
+                    <a href="javascript:;">
+                        <p class="clr-pink fw-900">特定商取引に関する表示</p>
+                        <span class="next-arrow"><img src="" alt=""></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="attachment">
+        <div class="main-container">
+            <h4 class="clr-brown fw-900">オプションのカスタマイズ</h4>
+            <section class="material">
+                <h5 class="back-clr-lgt-pink flex flex-y-center fw-900">素材<span class="essential">必須</span></h5>
+                <div class="attach__wrapper">
+                    <div class="attach__lists">
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material01" class="absolute">
+                            <label for="material01" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material02" class="absolute">
+                            <label for="material02" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material03" class="absolute">
+                            <label for="material03" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material04" class="absolute">
+                            <label for="material04" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material05" class="absolute">
+                            <label for="material05" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material06" class="absolute">
+                            <label for="material06" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material07" class="absolute">
+                            <label for="material07" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="materal" id="material08" class="absolute">
+                            <label for="material08" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">透明</p>
+                            </label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="attach">
+                <h5 class="back-clr-lgt-pink flex flex-y-center fw-900">アタッチメント<span class="essential">必須</span></h5>
+                <div class="attach__wrapper">
+                    <div class="attach__lists">
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach01" class="absolute">
+                            <label for="attach01" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach02" class="absolute">
+                            <label for="attach02" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach03" class="absolute">
+                            <label for="attach03" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach04" class="absolute">
+                            <label for="attach04" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach05" class="absolute">
+                            <label for="attach05" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach06" class="absolute">
+                            <label for="attach06" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach07" class="absolute">
+                            <label for="attach07" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="attach" id="attach04" class="absolute">
+                            <label for="attach04" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="attach">
+                <h5 class="back-clr-lgt-pink flex flex-y-center fw-900">アタッチメント<span class="essential">必須</span></h5>
+                <div class="attach__wrapper--odd">
+                    <div class="number-control">
+                        <span class="input-number-decrement">–</span><input class="input-number" type="number" value="1"
+                            min="0" name="milli-size"><span class="input-number-increment">+</span>
+                    </div>
+                    <span>￥82(税込)</span>
+                </div>
+            </section>
+            <section class="attach">
+                <h5 class="back-clr-lgt-pink flex flex-y-center fw-900">袋<span class="essential">必須</span></h5>
+                <div class="attach__wrapper">
+                    <div class="attach__lists">
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag01" class="absolute">
+                            <label for="bag01" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag02" class="absolute">
+                            <label for="bag02" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag03" class="absolute">
+                            <label for="bag03" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag04" class="absolute">
+                            <label for="bag04" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag05" class="absolute">
+                            <label for="bag05" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag06" class="absolute">
+                            <label for="bag06" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag07" class="absolute">
+                            <label for="bag07" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+                        <div class="attach__lists--item relative">
+                            <input type="radio" name="bag" id="bag08" class="absolute">
+                            <label for="bag08" class="block relative full-size">
+                                <img src="./assets/img/product/attachment.png" alt="attachment" class="block full-size">
+                                <span class="cost absolute">￥82(税込)</span>
+                                <p class="absolute w-full back-clr-main-black clr-white flex flex-x-y-center">マツバ </p>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="prevnext-btn">
+                <div class="prevnext-btn__group">
+                    <button type="button" class="hvr-bounce-to-left">価格表へ戻る</button>
+                    <button type="submit" class="hvr-bounce-to-right">カートに入れる</button>
+                </div>
+            </section>
+        </div>
+        <div class="cart-side back-clr-lgt-pink sp-hide" id="cartSide">
+            <img src="./assets/img/icon/header/cart.svg" alt="side cart">
+        </div>
+        <div class="cart-status sp-hide" id="cartStatus">
+            <div class="cart-status-header">
+                選択中の商品
+                <a href="javascript:;" class="inline-block" id="closeStatus">&times;</a>
+            </div>
+            <div class="cart-status-body">
+                <div class="prd-name">
+                    アクリルキーホルダー（片面印刷）
+                    <div class="number-control">
+                        <span class="input-number-decrement">–</span><input class="input-number" type="number" value="1"
+                            min="0"><span class="input-number-increment">+</span>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td>納期</td>
+                        <td>10営業日</td>
+                    </tr>
+                    <tr>
+                        <td>印刷仕様</td>
+                        <td>50×50mm以内</td>
+                    </tr>
+                    <tr>
+                        <td>数量</td>
+                        <td>2個</td>
+                    </tr>
+                    <tr>
+                        <td>印刷料金</td>
+                        <td> ¥1,621（税込）</td>
+                    </tr>
+                </table>
+                <div class="attachment__status--lists">
+                    <div class="attachment__status--item">
+                        <div class="attachment__status--item-header">
+                            <p class="attach-sort">素材選択</p>
+                            <a href="javascript:;" class="closeStatusItem inline-block">&times;</a>
+                        </div>
+                        <div class="attachment__status--item-body">
+                            <p class="attach-name">
+                                透明アクリル
+                            </p>
+                            <p class="attach-cost">￥165</p>
+                        </div>
+                    </div>
+                    <div class="attachment__status--item">
+                        <div class="attachment__status--item-header">
+                            <p class="attach-sort">素材選択</p>
+                            <a href="javascript:;" class="closeStatusItem inline-block">&times;</a>
+                        </div>
+                        <div class="attachment__status--item-body">
+                            <p class="attach-name">
+                                透明アクリル
+                            </p>
+                            <p class="attach-cost">￥165</p>
+                        </div>
+                    </div>
+                    <div class="attachment__status--item">
+                        <div class="attachment__status--item-header">
+                            <p class="attach-sort">素材選択</p>
+                            <a href="javascript:;" class="closeStatusItem inline-block">&times;</a>
+                        </div>
+                        <div class="attachment__status--item-body">
+                            <p class="attach-name">
+                                透明アクリル
+                            </p>
+                            <p class="attach-cost">￥165</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="attachment__status--total">
+                    <p class="quantity">¥ 2,125 × 1点</p>
+                    <div class="total">
+                        <span class="clr-pink">小計</span>
+                        <p class="total-value"><span class="clr-pink">¥ 2,125</span>（税込）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./assets/img/footer/banner.jpg" alt="footer banner" class="w-full">
+        <div class="footer-main back-clr-main-black">
+            <div class="f-container">
+                <nav class="footer-menu__group">
+                    <ul class="footer-menu__grup-lists">
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu__grup-lists">
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu__grup-lists">
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                        <li class="footer-menu__group--item">
+                            <a href="javascript:;" class="full-size">
+                                <span><img src="./assets/img/icon/arrow/left_white.png" alt="arrow next"></span>
+                                <p class="clr-white">アクリル職人について</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr class="back-clr-white">
+                <div class="footer-intro">
+                    <p class="clr-white text-center">
+                        ©2023 アクリルグッズの達人
+                    </p>
+                    <img src="./assets/img/footer_logo.png" alt="footer logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/style.js"></script>
+</body>
+
+</html>
